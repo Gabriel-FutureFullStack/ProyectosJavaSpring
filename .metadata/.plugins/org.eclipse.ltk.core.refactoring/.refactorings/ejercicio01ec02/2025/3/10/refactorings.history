@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.pixelpulse.ejercicio01ec02.model.pedido&apos; to &apos;Pedido&apos;&#x0D;&#x0A;- Original project: &apos;ejercicio01ec02&apos;&#x0D;&#x0A;- Original element: &apos;com.pixelpulse.ejercicio01ec02.model.pedido&apos;&#x0D;&#x0A;- Renamed element: &apos;com.pixelpulse.ejercicio01ec02.model.Pedido&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;pedido&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.pixelpulse.ejercicio01ec02.model{pedido.java[pedido" matchStrategy="1" name="Pedido" qualified="false" references="true" similarDeclarations="false" stamp="1740954027449" textual="false" version="1.0"/>
+</session>
