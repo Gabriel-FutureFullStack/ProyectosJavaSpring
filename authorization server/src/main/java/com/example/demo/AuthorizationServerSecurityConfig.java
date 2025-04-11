@@ -4,6 +4,8 @@ import com.nimbusds.jose.jwk.JWKSet;
 import com.nimbusds.jose.jwk.RSAKey;
 import com.nimbusds.jose.jwk.source.ImmutableJWKSet;
 import com.nimbusds.jose.jwk.source.JWKSource;
+import com.nimbusds.jose.proc.SecurityContext;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
@@ -79,7 +81,7 @@ public class AuthorizationServerSecurityConfig {
         return new InMemoryRegisteredClientRepository(oidcClient);
     }
 
-    @Bean
+    @Bean   
     public JWKSource jwkSource() {
         KeyPair keyPair = generateRsaKey();
         RSAPublicKey publicKey = (RSAPublicKey) keyPair.getPublic();
@@ -102,7 +104,7 @@ public class AuthorizationServerSecurityConfig {
     }
 
     @Bean
-    public JwtDecoder jwtDecoder(JWKSource jwkSource) {
+    public JwtDecoder jwtDecoder(JWKSource<SecurityContext> jwkSource) {
         return OAuth2AuthorizationServerConfiguration.jwtDecoder(jwkSource);
     }
 

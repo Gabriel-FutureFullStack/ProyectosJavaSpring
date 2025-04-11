@@ -38,6 +38,10 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\6cCiclo\servicesWeb02\FinalOAuth2"/>
+			<item value="D:\6cCiclo\servicesWeb02\projects\user-service"/>
+			<item value="D:\6cCiclo\servicesWeb02\projects\department-service"/>
+			<item value="D:\6cCiclo\servicesWeb02\projects\oauth2"/>
 			<item value="D:\6cCiclo\servicesWeb02\projects\resource server"/>
 			<item value="D:\6cCiclo\servicesWeb02\projects\authorization server"/>
 			<item value="D:\6cCiclo\servicesWeb02\projects\pregunta03ec03"/>
