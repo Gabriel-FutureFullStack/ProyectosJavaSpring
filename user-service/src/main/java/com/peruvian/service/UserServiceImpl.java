@@ -35,10 +35,13 @@ public class UserServiceImpl implements UserService{
         User user = userRepository.findById(userId).get();
         UserDto userDto = mapToUser(user);
 
+//        ResponseEntity<DepartmentDto> responseEntity = restTemplate
+//                .getForEntity("http://localhost:8080/api/departments/listar/" + user.getDepartmentId(),
+//                DepartmentDto.class);
         ResponseEntity<DepartmentDto> responseEntity = restTemplate
-                .getForEntity("http://localhost:8080/api/departments/listar/" + user.getDepartmentId(),
-                DepartmentDto.class);
-
+                .getForEntity("http://DEPARTMENT-SERVICE/api/departments/listar/" + user.getDepartmentId(),
+                DepartmentDto.class); 
+        
         DepartmentDto departmentDto = responseEntity.getBody();
 
         System.out.println(responseEntity.getStatusCode());
